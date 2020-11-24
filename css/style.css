@@ -1,0 +1,132 @@
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #7e7d7d;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+.nav {
+  box-shadow: 0 5px 20px #383838;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 920px) {
+  .nav {
+    justify-content: center;
+  }
+}
+@media (max-width: 920px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.nav a {
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  transition: color 0.5s ease;
+}
+
+.nav a:hover {
+  color: #707070;
+}
+
+.name {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.header,
+.contacts {
+  background-color: #252e30;
+}
+
+.footer {
+  background-color: #191f21;
+}
+
+#about-me {
+  background-color: #e7e7e7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.info-foto {
+  margin: 10px 0;
+  width: 500px;
+  height: 400px;
+  background-image: url(/img/info-foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.info-text {
+  margin: 0 10px;
+  width: 500px;
+}
+
+.topbutton {
+  border: 3px solid #969696;
+  background: #e7e7e7;
+  padding: 0 9px 5px 9px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #969696;
+  font-family: verdana;
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+
+.topbutton:hover {
+  background: #707070;
+  color: #ffffff;
+}
+
+#portfolio h1 {
+  text-align: center;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio a {
+  width: 400px;
+  height: 300px;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.star-wars {
+  background-image: url(/img/star-wars.png);
+}
+.gsearch {
+  background-image: url(/img/gsearch.png);
+}
+.todo {
+  background-image: url(/img/todo.png);
+}
+.calc {
+  background-image: url(/img/calc.png);
+}
