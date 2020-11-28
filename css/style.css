@@ -211,8 +211,7 @@ h1 {
 }
 
 #contacts {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 40px 10px 50px 10px;
   text-align: center;
   color: #f1f1f1;
 }
@@ -220,4 +219,5 @@ h1 {
 #contacts a {
   color: #f1f1f1;
   display: block;
+  margin: 10px;
 }
