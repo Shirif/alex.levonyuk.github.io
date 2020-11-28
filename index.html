@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
   <link rel="stylesheet" href="/css/style.css" />
   <script>
@@ -22,16 +24,14 @@
 <body>
 
   <header class="header">
-    <a href="#" id="menu-button" onclick="openMenu()">&equiv;</a>
+
     <a href="#" title="Вернуться к началу" class="topbutton">&#9650;</a>
-    <div class="container"></div>
+    <div class="container">
+    <a href="#" id="menu-button" onclick="openMenu()">&equiv;</a>
     <nav class="nav" id="menu">
       <a href="#about-me">обо мне</a>
       <a href="#portfolio">портфолио</a>
-      <a href="#skills">навыки</a>
-      <a href="#resume">резюме</a>
-      <a href="#education">образование</a>
-      <a href="#courses">курсы</a>
+       <a href="#resume">резюме</a>
       <a href="#contacts">контакты</a>
     </nav>
     </div>
@@ -56,10 +56,30 @@
         <a href="https://blissful-mestorf-cfcdc0.netlify.app/" class="calc"></a>
       </div>
     </div>
+    <div id="resume">
+      <h1>Резюме</h1>
+      <P>Если вас заинтересовала моя кандидатура, вы можете скачать мое резюме.</P>
+      <a href="https://github.com/Shirif/shirif.github.io/raw/master/docs/alexander_levonyuk_cv.pdf">Скачать резюме</a>
+    </div>
   </main>
 
-  <footer></footer>
+  <footer class="footer">
+    <div id="contacts" class="contacts">
+      <h1>Контакты</h1>
+      <p>Ниже представлена моя контактная информация. Предпочтительным способом связи является электронная почта.</p>
+
+<a href="mailto:saga2002@gmail.com">Email: saga2002@gmail.com</a>
+<a href="tel:+375297220773">Tel: +375 (29) 722 07 73</a>
+<a href="skype:saga20022002">Skype: saga20022002</a>
+
+    </div>
+    
+  </footer>
 
 </body>
 
+<script>
+  const navMenu = document.querySelector('#menu');
+  navMenu.addEventListener('click', openMenu)
+</script>
 </html>
