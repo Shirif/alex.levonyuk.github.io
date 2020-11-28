@@ -4,25 +4,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
-  <!-- <link rel="stylesheet" href="/css/reset.css" /> -->
   <link rel="stylesheet" href="/css/style.css" />
+  <script>
+    function openMenu() {
+      if (document.getElementById('menu').className === 'nav') {
+        document.getElementById('menu').className = 'nav nav-hidden';
+      } else {
+        document.getElementById('menu').className = 'nav';
+      }
+    }
+  </script>
 
   <title>Alexander Levonyuk</title>
+
 </head>
 
 <body>
-  <a href="#" title="Вернуться к началу" class="topbutton">&#9650;</a>
+
   <header class="header">
-    <div class="container">
-      <nav class="nav">
-        <a href="#about-me">обо мне</a>
-        <a href="#portfolio">портфолио</a>
-        <a href="#skills">навыки</a>
-        <a href="#resume">резюме</a>
-        <a href="#education">образование</a>
-        <a href="#courses">курсы</a>
-        <a href="#contacts">контакты</a>
-      </nav>
+    <a href="#" id="menu-button" onclick="openMenu()">&equiv;</a>
+    <a href="#" title="Вернуться к началу" class="topbutton">&#9650;</a>
+    <div class="container"></div>
+    <nav class="nav" id="menu">
+      <a href="#about-me">обо мне</a>
+      <a href="#portfolio">портфолио</a>
+      <a href="#skills">навыки</a>
+      <a href="#resume">резюме</a>
+      <a href="#education">образование</a>
+      <a href="#courses">курсы</a>
+      <a href="#contacts">контакты</a>
+    </nav>
     </div>
   </header>
   <main>
@@ -46,7 +57,9 @@
       </div>
     </div>
   </main>
+
   <footer></footer>
+
 </body>
 
 </html>
