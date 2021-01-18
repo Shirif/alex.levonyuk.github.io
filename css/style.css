@@ -170,6 +170,9 @@ h1 {
   background-size: cover;
   box-shadow: 0 25px 30px #383838;
 }
+.omdb {
+  background-image: url(/img/omdb.png);
+}
 .star-wars {
   background-image: url(/img/star-wars.png);
 }
